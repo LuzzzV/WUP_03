@@ -19,6 +19,13 @@ davisdata <- read.csv(file="UCDavis.csv")
 
 ## Now with ggplot - first select the basic data
 
+## methods  
+Seat is a categorical variable   
+Alcohol is a numerical variable   
+For this problem we explain alcohol consumption based on where people sit  
+Therefore the helper file we use is the numerical categorical file  
+
+
 ```{r}
 basicCN <- ggplot(davisdata,aes(y=alcohol,x=Seat))
 ```
