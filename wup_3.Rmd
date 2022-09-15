@@ -51,6 +51,13 @@ Based on the numerical summary evidence shows that people who sit in the back dr
 
 ## Inferential Tests
 
+```{r}
+model1 <- aov(alcohol~Seat,data=davisdata)
+summary.aov(model1)
+```
+Based on the inferential test results the p value is less than 0.05 which means we reject the null hypothesis  
+
 ## Conclusions
 
+Based on the evidence shown in the aov we reject the null hypothesis because the p-value is 0.000116 which is less than 0.05.  
 
