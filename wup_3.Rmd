@@ -55,9 +55,15 @@ Based on the numerical summary evidence shows that people who sit in the back dr
 model1 <- aov(alcohol~Seat,data=davisdata)
 summary.aov(model1)
 ```
+```{r}
+#we specify the margins starting at the bottom and proceeding clockwise - thus 8.7 is the left side margin to hold the names of the factors
+par(mar = c(3, 8.7, 2, 2))
+plot(TukeyHSD(model1),las=2)
+```
+
 Based on the inferential test results the p value is less than 0.05 which means we reject the null hypothesis  
 
 ## Conclusions
 
-Based on the evidence shown in the aov we reject the null hypothesis because the p-value is 0.000116 which is less than 0.05.  
+Based on the evidence shown in the aov we reject the null hypothesis because the p-value is 0.000116 which is less than 0.05. People who sit in the back consume more alcohol than people who sit in the front and middle.  Further from the Tukey test there is no difference in alcohol consumption in seats middle to front.
 
