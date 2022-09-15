@@ -25,6 +25,10 @@ Alcohol is a numerical variable
 For this problem we explain alcohol consumption based on where people sit  
 Therefore the helper file we use is the numerical categorical file  
 
+$H_0$: There is no difference in alcohol consumption based on where you sit  
+
+$H_A$: There is a difference in alcohol consumption based on where you sit  
+
 
 ```{r}
 basicCN <- ggplot(davisdata,aes(y=alcohol,x=Seat))
